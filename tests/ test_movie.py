@@ -3,12 +3,7 @@ from src.models import Movie, db
 
 from tests.utils import refresh_db
 
-from src.models import Movie, db
 
-
-def refresh_db():
-    Movie.query.delete()
-    db.session.commit()
 
 def test_get_all_movies(test_app: FlaskClient):
     refresh_db()

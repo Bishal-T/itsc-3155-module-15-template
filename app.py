@@ -8,11 +8,8 @@ from src.repositories.movie_repository import movie_repository_singleton
 
 
 
-from src.models import db
-from app import app
 
-with app.app_context():
-    db.create_all()
+
 
 load_dotenv()
 
